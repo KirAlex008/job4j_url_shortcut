@@ -1,14 +1,10 @@
 package ru.job4j.urlshortcut.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-
 import javax.persistence.*;
 import java.util.*;
 
 @Table(name = "site")
 @Entity
-//@JsonIgnoreProperties(ignoreUnknown = true)
 public class Site {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
