@@ -13,8 +13,6 @@ public class Site {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-  /*  @OneToMany(mappedBy = "site")
-    private List<Url> sites = new ArrayList<>();*/
     private String site;
     private String login;
     private String password;
@@ -22,11 +20,6 @@ public class Site {
     public Site() {
     }
 
-   /* public Site(String login, String password) {
-        this.login = login;
-        this.password = password;
-    }
-*/
     public Site(String site, String login, String password) {
         this.site = site;
         this.login = login;
